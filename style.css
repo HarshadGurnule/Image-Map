@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-size: cover;
+background-position: center;
+}
+
+.container {
+width: 80%; /* adjust the width to your liking */
+margin: 40px auto ;
+background-color: #fff; /* white background */
+padding: 20px;
+border: 1px solid #ccc; /* light gray border */
+border-radius: 10px; /* rounded corners */
+}
+
+.infoContainer {
+max-width: 50%; /* adjust the width to your liking */
+/* float: right;  float the info container to the right */
+display: flex;
+justify-content: space-around;
+padding: 20px 0 20px;
+}
+
+.infoContainer img {
+width: 100%; /* make the images full-width */
+margin-bottom: 20px; /* add some space between images */
+border: 1px solid #ccc; /* light gray border */
+border-radius: 10px; /* rounded corners */
+}
+h1, h2 {
+color: #333;
+margin-bottom: 10px;
+}
+section {
+margin-bottom: 30px;
+padding-bottom: 20px;
+border-bottom: 1px solid #ccc;
+width: 100%;
+}
+/* Hero Section */
+.hero {
+background-color: #333;
+color: #fff;
+padding: 30px; /* Add more padding to the top and bottom */
+text-align: center;
+}
+.hero h1 {
+color: #ccc;
+font-size: 36px;
+margin-bottom: 20px; /* Add more margin to the bottom */
+}
+/* Upload Image Section */
+#image-upload {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+#image-canvas {
+margin-top: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+max-width: 100%; /* Ensure canvas doesn't exceed container width */
+max-height: 500px; /* Set a maximum height */
+width: auto;
+height: auto;
+}
+/* Draw Shapes Section */
+#controls {
+margin-top: 20px;
+}
+#controls label {
+display: block;
+margin-bottom: 10px;
+}
+#controls select, #controls button {
+padding: 6px 7px 6px ; /* Make the buttons larger */
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-right: 10px;
+background-color: #4caf86; /* Add a bright accent color */
+color: #fff;
+cursor: pointer;
+}
+#controls button[disabled] {
+opacity: 0.5;
+cursor: not-allowed;
+}
+/* Generated Code Section */
+#generated-code {
+width: 100%;
+height: 200px;
+padding: 10px 0 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+resize: vertical;
+}
+
+
+
+.content-block {
+max-width: 1500px;
+margin:auto;
+padding: 20px;
+border: 1px solid #CCCCCC; /* Changed to a light gray border */
+border-radius: 10px;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.content-block > .subContent-block > h1 {
+font-family: 'Open Sans', sans-serif; /* Changed to Open Sans font */
+font-size: 30px;
+font-weight: bold;
+color: #212121; /* Changed to a darker gray color */
+margin-bottom: 20px;
+}
+
+.content-block > .subContent-block > h2 {
+font-family: 'Open Sans', sans-serif;
+font-size: 22px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.content-block > .subContent-block > p {
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+.content-block > .subContent-block > ul {
+list-style: disc;
+margin-bottom: 20px;
+}
+
+.content-block > .subContent-block > ul > li {
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.content-block > .subContent-block > code {
+font-family: 'Monaco', monospace;
+font-size: 16px;
+padding: 2px 4px;
+border-radius: 4px;
+}
+
+.content-block > .subContent-block > pre {
+max-width: 900px;
+white-space: pre-wrap;
+font-family: 'Monaco', monospace;
+font-size: 16px;
+color: #000000;
+background-color: #0000004b;
+padding: 10px;
+border-radius: 10px;
+}
+
+.content-block > .subContent-block > h1:first-child {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 30px;
+}

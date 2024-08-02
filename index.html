@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Map Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div class="container">
+      <div class="hero">
+        <h1>Image Map Generator</h1>
+      </div>
+      <section>
+        <h2>Upload Image</h2>
+        <input type="file" id="image-upload" accept="image/*">
+        <br>
+        <canvas id="image-canvas"></canvas>
+      </section>
+      <section>
+        <h2>Draw Shapes</h2>
+        <div id="controls">
+          <label for="shape">Select Shape:</label>
+          <select id="shape" disabled>
+            <option value="rect">Rectangle</option>
+            <option value="circle">Circle</option>
+          </select>
+          <button id="generate" disabled>Generate Map Code</button>
+          <button id="undo" disabled>Undo</button>
+          <button id="redo" disabled>Redo</button>
+          
+        </div>
+      </section>
+      <section>
+        <h2>Generated Code</h2><div id="controls"><button id="copy" disabled>Copy</button></div>
+        <textarea id="generated-code" readonly></textarea>
+      </section>
+      <section>
+        <h2>How to use ?</h2>
+        <div class="infoContainer">
+          <img src="./Image/SleectAndUpload.png" alt="info">
+          <img src="./Image/How ToUse.png" alt="info">
+        </div>
+      </section>
+      <div class="content-block">
+        <div class="subContent-block">
+          <h1>HTML <code>&lt;map&gt;</code> Element</h1>
+        <p>The HTML <code>&lt;map&gt;</code> element is used to define an image map, which is a clickable area on an image that links to another webpage or performs a specific action.</p>
+      
+        <h2>Syntax:</h2>
+        <pre><code>&lt;img src="image.jpg" alt="Image with clickable areas" usemap="#mapname"&gt;
+      
+      &lt;map name="mapname"&gt;
+        &lt;area shape="rect" coords="x1,y1,x2,y2" href="link1.html" alt="Link 1"&gt;
+        &lt;area shape="circle" coords="x,y,radius" href="link2.html" alt="Link 2"&gt;
+        &lt;area shape="poly" coords="x1,y1,x2,y2,x3,y3,...,xn,yn" href="link3.html" alt="Link 3"&gt;
+      &lt;/map&gt;</code></pre>
+      
+        <h2>Attributes:</h2>
+        <ul>
+          <li><strong><code>name</code></strong>: Specifies the name of the map.</li>
+          <li><strong><code>area</code></strong>: Defines a clickable area within the image map.
+            <ul>
+              <li><strong><code>shape</code></strong>: Specifies the shape of the area (rect, circle, poly).</li>
+              <li><strong><code>coords</code></strong>: Specifies the coordinates of the area (x1,y1,x2,y2 for rectangles, x,y,radius for circles, x1,y1,x2,y2,x3,y3,...,xn,yn for polygons).</li>
+              <li><strong><code>href</code></strong>: Specifies the link URL for the area.</li>
+              <li><strong><code>alt</code></strong>: Specifies the alternative text for the area.</li>
+            </ul>
+          </li>
+        </ul>
+      
+        <h2>Benefits:</h2>
+        <ul>
+          <li>Allows users to click on specific areas of an image to access different links or perform different actions.</li>
+          <li>Enhances user experience by providing a more interactive and engaging way to navigate through content.</li>
+          <li>Can be used to create interactive images, such as menus, diagrams, and infographics.</li>
+        </ul>
+      
+        <h2>Common use cases:</h2>
+        <ul>
+          <li>Creating interactive menus or navigation systems.</li>
+          <li>Adding hotspots to images, such as diagrams or infographics.</li>
+          <li>Creating interactive tutorials or guides.</li>
+          <li>Enhancing accessibility by providing alternative text for image areas.</li>
+        </ul>
+      
+        <h2>Browser support:</h2>
+        <p>The HTML <code>&lt;map&gt;</code> element is supported by all modern browsers, including Chrome, Firefox, Safari, Edge, and Internet Explorer.</p>
+      
+        <h2>Tips and best practices:</h2>
+        <ul>
+          <li>Use descriptive <code>alt</code> text for each area to improve accessibility.</li>
+          <li>Use a consistent naming convention for your map and area elements.</li>
+          <li>Test your image map in different browsers and devices to ensure compatibility.</li>
+          <li>Consider using CSS to style your image map and make it more visually appealing.</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
